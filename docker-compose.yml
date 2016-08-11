@@ -1,0 +1,5 @@
+uo:
+    build: uo
+    volumes:
+      - /srv/docker/uo:/srv/docker/uo
+    env_file: uo/.env.conf
