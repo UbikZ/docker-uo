@@ -16,6 +16,6 @@ if [[ ! -f /srv/docker/uo/.runuo ]]; then
 fi
 
 cd runuo-master && \
-ls -alt && \
-dmcs -optimize+ -unsafe -t:exe -out:RunUO.exe -win32icon:Server/runuo.ico -nowarn:219,414 -d:MONO -recurse:Server/*.cs /reference:System.Drawing.dll && \
-ls -alt
+dmcs -optimize+ -unsafe -t:exe -out:RunUO.exe -win32icon:Server/runuo.ico -nowarn:219,414 -d:MONO -recurse:Server/*.cs /reference:System.Drawing.dll
+
+mono RunUO.exe
