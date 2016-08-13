@@ -1,5 +1,5 @@
 uo:
-    build: uo
+    image: ubikz/docker-uo
     volumes:
       - /srv/docker/uo/datafiles:/srv/docker/uo/datafiles
       - /srv/docker/uo/lock:/srv/docker/uo/lock
