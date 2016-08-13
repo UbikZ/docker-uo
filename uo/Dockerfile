@@ -9,4 +9,6 @@ RUN apk update \
 COPY ./scripts/entrypoint.sh /entrypoint.sh
 COPY ./replace/* /
 
+EXPOSE 2593
+
 ENTRYPOINT ["/entrypoint.sh"]

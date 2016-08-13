@@ -3,4 +3,6 @@ uo:
     volumes:
       - /srv/docker/uo/datafiles:/srv/docker/uo/datafiles
       - /srv/docker/uo/lock:/srv/docker/uo/lock
+    ports:
+        - "2593"
     env_file: uo/.env.conf
