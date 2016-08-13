@@ -13,7 +13,8 @@ namespace Server.Misc
 		 * Example:
 		 *  private static string CustomPath = @"C:\Program Files\Ultima Online";
 		 */
-		private static string CustomPath = @"/srv/docker/uo/datafiles";
+		private static string customPath = @"/srv/docker/uo/datafiles";
+		private static string dataPath = @"./Data";
 
 		/* The following is a list of files which a required for proper execution:
 		 *
@@ -33,7 +34,35 @@ namespace Server.Misc
 
 		public static void Configure()
 		{
-			Core.DataDirectories.Add( "./Data" );
+			string pathUO = GetPath( @"Origin Worlds Online\Ultima Online\1.0", "ExePath" );
+			string pathTD = GetPath( @"Origin Worlds Online\Ultima Online Third Dawn\1.0", "ExePath" ); //These refer to 2D & 3D, not the Third Dawn expansion
+			string pathKR = GetPath( @"Origin Worlds Online\Ultima Online\KR Legacy Beta", "ExePath" ); //After KR, This is the new registry key for the 2D client
+			string pathSA = GetPath( @"Electronic Arts\EA Games\Ultima Online Stygian Abyss Classic", "InstallDir" );
+			string pathHS = GetPath( @"Electronic Arts\EA Games\Ultima Online Classic", "InstallDir" );
+
+			if ( customPath != null )
+				Core.DataDirectories.Add( customPath );
+
+			if ( pathUO != null )
+				Core.DataDirectories.Add( pathUO );
+
+			if ( pathTD != null )
+				Core.DataDirectories.Add( pathTD );
+
+			if ( pathKR != null )
+				Core.DataDirectories.Add( pathKR );
+
+			if ( pathSA != null )
+				Core.DataDirectories.Add( pathSA );
+
+			if ( pathHS != null )
+				Core.DataDirectories.Add( pathHS );
+
+			if ( Core.DataDirectories.Count == 0 && !Core.Service )
+			{
+				Console.WriteLine( "Enter the Ultima Online directory:" );
+				Core.DataDirectories.Add( dataPath );
+			}
 		}
 
 		private static string GetPath( string subName, string keyName )

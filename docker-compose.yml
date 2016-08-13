@@ -1,5 +1,6 @@
 uo:
     build: uo
     volumes:
-      - /srv/docker/uo:/srv/docker/uo
+      - /srv/docker/uo/datafiles:/srv/docker/uo/datafiles
+      - /srv/docker/uo/lock:/srv/docker/uo/lock
     env_file: uo/.env.conf
