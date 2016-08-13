@@ -1,13 +1,13 @@
 #! /bin/bash
 
-if [[ ! -f /srv/docker/uo/.runuo-distro ]]; then
+if [[ ! -f /srv/docker/uo/lock/.runuo-distro ]]; then
 	wget --no-check-certificate http://github.com/Nerun/runuo-nerun-distro/archive/master.zip && \
 	unzip -qq master.zip && \
 	rm master.zip && \
 	touch /srv/docker/uo/.runuo-distro
 fi
 
-if [[ ! -f /srv/docker/uo/.runuo ]]; then
+if [[ ! -f /srv/docker/uo/lock/.runuo ]]; then
 	wget --no-check-certificate http://github.com/runuo/runuo/archive/master.zip && \
 	unzip -qq master.zip && \
 	rm master.zip && \
