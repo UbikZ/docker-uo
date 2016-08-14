@@ -1,0 +1,8 @@
+<!DOCTYPE package>
+<package name="Revelation" version="0">
+ <update>
+  <url>http://uorevelation.com/update</url>
+  <policy>Always</policy>
+  <lastUpdateCheck></lastUpdateCheck>
+ </update>
+</package>
