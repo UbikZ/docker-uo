@@ -11,7 +11,7 @@ COPY sites-enabled/uo.conf /etc/nginx/sites-enabled/uo.conf
 # Expose ports (SSL)
 EXPOSE 443
 
-COPY entrypoint.sh /entrypoint.sh
+COPY ./scripts/entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
 
 # Define default command
