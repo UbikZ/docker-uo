@@ -1,5 +1,8 @@
 # Ultima Online Server (with Docker)
 
+[![](https://images.microbadger.com/badges/image/ubikz/docker-uo.svg)](http://microbadger.com/images/ubikz/docker-uo "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/ubikz/docker-uo.svg)](http://microbadger.com/images/ubikz/docker-uo "Get your own version badge on microbadger.com")
+
 Ultima Online Server :
 - **Built** with [Mono](http://www.mono-project.com/)
 - **From** [RunUO](https://github.com/runuo/runuo) source code
