@@ -38,8 +38,8 @@ namespace Server.Misc
 		 * firewalls) or specific IP adddresses you can do so by modifying the file SocketOptions.cs found in this directory.
 		 */
 
-		public static readonly string Address = __UO_SERVER_IP__;
-		public static readonly string ServerName = __UO_SERVER_NAME__;
+		public static readonly string Address = "__UO_SERVER_IP__";
+		public static readonly string ServerName = "__UO_SERVER_NAME__";
 		public static readonly bool AutoDetect = true;
 
 		public static void Initialize()
