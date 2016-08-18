@@ -50,17 +50,8 @@ The volumes defined (*volume within host machine -> volume within docker contain
 6. Copy some game files in the ```/srv/docker/uo/datafiles``` host machine volumes
   * Check the Official Ultima Online folder
   * Copy these files (*~ 650mb*):
-    > map0LegacyMUL.uop multi.mul staidx0x.mul statics1.mul
-    > map0xLegacyMUL.uop stadif0.mul staidx1.mul statics1x.mul
-    > map1LegacyMUL.uop stadif1.mul staidx1x.mul statics2.mul
-    > map1xLegacyMUL.uop stadif2.mul staidx2.mul statics2x.mul
-    > map2LegacyMUL.uop stadifi0.mul staidx2x.mul statics3.mul
-    > map2xLegacyMUL.uop stadifi1.mul staidx3.mul statics4.mul
-    > map3LegacyMUL.uop stadifi2.mul staidx4.mul statics5.mul
-    > map4LegacyMUL.uop stadifl0.mul staidx5.mul statics5x.mul
-    > map5LegacyMUL.uop stadifl1.mul staidx5x.mul tiledata.mul
-    > map5xLegacyMUL.uop stadifl2.mul statics0.mul
-    > multi.idx staidx0.mul statics0x.mul
+    > map0LegacyMUL.uop multi.mul staidx0x.mul statics1.mul map0xLegacyMUL.uop stadif0.mul staidx1.mul statics1x.mul map1LegacyMUL.uop stadif1.mul staidx1x.mul statics2.mul map1xLegacyMUL.uop stadif2.mul staidx2.mul statics2x.mul map2LegacyMUL.uop stadifi0.mul staidx2x.mul statics3.mul map2xLegacyMUL.uop stadifi1.mul staidx3.mul statics4.mul map3LegacyMUL.uop stadifi2.mul staidx4.mul statics5.mul map4LegacyMUL.uop stadifl0.mul staidx5.mul statics5x.mul map5LegacyMUL.uop stadifl1.mul staidx5x.mul tiledata.mul map5xLegacyMUL.uop stadifl2.mul statics0.mul multi.idx staidx0.mul statics0x.mul
+
 7. Execute the ```docker-compose up -d```command
 8. Check the docker process are running with ```docker ps```
 9. Execute the ```UOS.exe``` client and fill the fields
