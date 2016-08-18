@@ -1,4 +1,4 @@
-uo:
+uo-server:
     image: ubikz/docker-uo
     volumes:
       - /srv/docker/uo/datafiles:/srv/docker/uo/datafiles
